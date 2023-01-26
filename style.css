@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #121213;
+  text-transform: capitalize;
+  background: url(./Assets/lucian-dachman-qxO2PBn7eKU-unsplash.jpg) no-repeat
+    center center/cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+h1 {
+  font-size: 2.75rem;
+  margin: 3rem 3.6rem 0 0;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.timer-container > div p {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.timer-container > div span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.days-container {
+  text-align: center;
+  margin-right: 6rem;
+}
+
+.hours-container {
+  text-align: center;
+  margin-right: 6rem;
+}
+
+.minutes-container {
+  text-align: center;
+  margin-right: 6rem;
+}
+
+.seconds-container {
+  text-align: center;
+  margin-right: 6rem;
+}
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .timer-container > div p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .timer-container > div span {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
